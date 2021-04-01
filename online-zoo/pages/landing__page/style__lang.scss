@@ -3,6 +3,7 @@ $color: #333333;
 
 html, body {
   font-family: $font;
+  overflow-x: hidden;
 }
 .header {
   display: flex;
@@ -78,4 +79,94 @@ border-radius: 50%;
 .hide-input {
   visibility: hidden;
 }
+}
+.about-animals {
+  margin-bottom: 100px;
+  height: 940px;
+  color: #FEFEFE;
+  background: #000 url('../../assets/images/landing__images/title__image.png') no-repeat;
+&__title {
+  width: 1150px;
+  padding-top: 206px;
+  padding-left: 360px;
+  font-weight: 900;
+  font-size: 89px;
+  line-height: 104px;
+  @media(max-width: 1400px) {
+     width: 940px;
+     padding-top: 128px;
+     padding-left: 150px;
+  }
+}
+.watch__btn {
+  img {
+    display: inline-block;
+    padding-right: 5px;
+  }
+  margin-top: 35px;
+  width: 245px;
+  height: 55px;
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.slider {
+  margin-top: -120px;
+  margin-left: 970px;
+  display: flex;
+  flex-direction: column;
+   @media(max-width: 1400px) {
+     margin-left: 650px;
+}
+}
+.slides {
+  display: flex;
+  align-items: center;
+}
+.slide {
+  margin-right: 46px;
+}
+.choice-slides {
+  padding-top: 70px;
+  margin-left: 190px;
+  width: 245px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+ .choice-index {
+    color: #FEFEFE;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #range {
+  -webkit-appearance: none;
+   width: 245px;
+  height: 5px;
+  background: rgba(189, 189, 189, 0.57);
+  outline: none;
+  }
+  #range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 10px;
+    background: #FEFEFE;
+    cursor: pointer
+  }
+}
+.social__icons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  height: 107px;
+  justify-content: space-around;
+}
+
 }

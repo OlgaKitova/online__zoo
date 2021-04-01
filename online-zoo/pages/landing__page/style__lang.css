@@ -1,5 +1,6 @@
 html, body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .header {
@@ -97,5 +98,126 @@ html, body {
 
 .header .hide-input {
   visibility: hidden;
+}
+
+.about-animals {
+  margin-bottom: 100px;
+  height: 940px;
+  color: #FEFEFE;
+  background: #000 url("../../assets/images/landing__images/title__image.png") no-repeat;
+}
+
+.about-animals__title {
+  width: 1150px;
+  padding-top: 206px;
+  padding-left: 360px;
+  font-weight: 900;
+  font-size: 89px;
+  line-height: 104px;
+}
+
+@media (max-width: 1400px) {
+  .about-animals__title {
+    width: 940px;
+    padding-top: 128px;
+    padding-left: 150px;
+  }
+}
+
+.about-animals .watch__btn {
+  margin-top: 35px;
+  width: 245px;
+  height: 55px;
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.about-animals .watch__btn img {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.about-animals .slider {
+  margin-top: -120px;
+  margin-left: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1400px) {
+  .about-animals .slider {
+    margin-left: 650px;
+  }
+}
+
+.about-animals .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-animals .slide {
+  margin-right: 46px;
+}
+
+.about-animals .choice-slides {
+  padding-top: 70px;
+  margin-left: 190px;
+  width: 245px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.about-animals .choice-slides .choice-index {
+  color: #FEFEFE;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.about-animals .choice-slides #range {
+  -webkit-appearance: none;
+  width: 245px;
+  height: 5px;
+  background: rgba(189, 189, 189, 0.57);
+  outline: none;
+}
+
+.about-animals .choice-slides #range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 10px;
+  background: #FEFEFE;
+  cursor: pointer;
+}
+
+.about-animals .social__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 150px;
+  height: 107px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style__lang.css.map */
