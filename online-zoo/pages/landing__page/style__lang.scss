@@ -1,6 +1,14 @@
 $font: 'Roboto',sans-serif;
 $color: #333333;
-
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+@media (min-width: 1410px) {
+.container {
+  width: 1200px;
+}
+}
 html, body {
   font-family: $font;
   overflow-x: hidden;
@@ -98,6 +106,32 @@ border-radius: 50%;
      padding-left: 150px;
   }
 }
+.slider {
+  margin-top: -120px;
+  margin-left: 970px;
+  display: flex;
+  flex-direction: column;
+   @media(max-width: 1400px) {
+     margin-left: 650px;
+}
+}
+.slides {
+  display: flex;
+  align-items: center;
+}
+.slide {
+  margin-right: 46px;
+}
+.social__icons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  height: 107px;
+  justify-content: space-around;
+}
+
+}
+//Кнопка
 .watch__btn {
   img {
     display: inline-block;
@@ -116,22 +150,7 @@ border-radius: 50%;
   color: #FFFFFF;
 }
 
-.slider {
-  margin-top: -120px;
-  margin-left: 970px;
-  display: flex;
-  flex-direction: column;
-   @media(max-width: 1400px) {
-     margin-left: 650px;
-}
-}
-.slides {
-  display: flex;
-  align-items: center;
-}
-.slide {
-  margin-right: 46px;
-}
+// Инпут ранже
 .choice-slides {
   padding-top: 70px;
   margin-left: 190px;
@@ -141,18 +160,21 @@ border-radius: 50%;
   font-size: 14px;
   line-height: 16px;
   color: #828282;
- .choice-index {
+}
+  .choice-index {
     color: #FEFEFE;
     font-size: 24px;
     line-height: 28px;
   }
+
   #range {
-  -webkit-appearance: none;
-   width: 245px;
-  height: 5px;
-  background: rgba(189, 189, 189, 0.57);
-  outline: none;
+    -webkit-appearance: none;
+    width: 245px;
+    height: 5px;
+    background: rgba(189, 189, 189, 0.57);
+    outline: none;
   }
+
   #range::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 30px;
@@ -160,13 +182,48 @@ border-radius: 50%;
     background: #FEFEFE;
     cursor: pointer
   }
+.choice-slides--gray {
+  margin-left: 0;
+.choice-index {
+  color: #333333;
+}#range {
+  margin-left: 0;
 }
-.social__icons {
+#range::-webkit-slider-thumb {
+background: #333333;
+}
+}
+//Works 
+.works {
+&__wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
-  height: 107px;
+  align-items: center;
+  width: 793px;
+  margin: 0 auto;
+  height: 858px;
   justify-content: space-around;
+  color: #333333;
 }
 
+&__title {
+  align-self: start;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+&__paragraph {
+  width: 793px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+
+&__image {
+  display: block;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
 }
