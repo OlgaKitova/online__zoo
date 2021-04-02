@@ -125,6 +125,7 @@ border-radius: 50%;
 .social__icons {
   display: flex;
   flex-direction: column;
+  margin-top: -150px;
   margin-left: 150px;
   height: 107px;
   justify-content: space-around;
@@ -195,6 +196,7 @@ background: #333333;
 }
 //Works 
 .works {
+  padding-bottom: 100px;
 &__wrapper {
   display: flex;
   flex-direction: column;
@@ -225,5 +227,42 @@ background: #333333;
   width: auto;
   height: auto;
   object-fit: cover;
+}
+}
+// Feautures
+.feautures {
+  color: $color;
+  width: 100%;
+  height: 415px;
+  background: #F2F2F2;
+
+&__wrapper {
+  height: 415px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+}
+.feauture {
+flex: 0 0 28.3%;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 235px;
+img {
+ width: 80px;
+ height: 80px;
+ margin-bottom: 15px;
+}
+&__title {
+font-weight: 900;
+font-size: 20px;
+line-height: 23px;
+margin-bottom: 15px;
+}
+
+&__text {
+  font-size: 14px;
+  line-height: 16px;
 }
 }
