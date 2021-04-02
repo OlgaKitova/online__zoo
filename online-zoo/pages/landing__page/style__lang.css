@@ -349,4 +349,67 @@ html, body {
   font-size: 14px;
   line-height: 16px;
 }
+
+.pets {
+  width: 100%;
+  height: 850px;
+}
+
+.pets__wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pets__title {
+  margin-bottom: 35px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.pets__slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pets__slide {
+  cursor: pointer;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+}
+
+.pets img {
+  max-width: 100%;
+}
+
+.pets .arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.pets .arrow:nth-child(1) {
+  left: -50px;
+}
+
+.pets .arrow:nth-child(2) {
+  right: -50px;
+}
 /*# sourceMappingURL=style__lang.css.map */

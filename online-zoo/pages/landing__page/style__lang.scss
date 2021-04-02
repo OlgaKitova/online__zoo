@@ -266,3 +266,46 @@ margin-bottom: 15px;
   line-height: 16px;
 }
 }
+// pets
+.pets {
+width: 100%;
+height: 850px;
+&__wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+height: 850px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+&__title {
+  margin-bottom: 35px;
+font-weight: 900;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+}
+&__slider {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+&__slide {
+  cursor: pointer;
+  flex: 0 1 22%;
+}
+img {
+ max-width: 100%;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+.arrow:nth-child(1) {
+   left: -50px;
+}
+.arrow:nth-child(2) {
+  right: -50px;
+}
+}
