@@ -70,7 +70,20 @@ html, body {
   line-height: 19px;
 }
 
+.header__link {
+  padding-bottom: 2px;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.header__link:hover {
+  border-bottom: 1px solid #333;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
 .header__choice {
+  cursor: pointer;
   background: #F2F2F2;
   border-radius: 190px;
   width: 54px;
@@ -113,9 +126,11 @@ html, body {
 
 .about-animals {
   margin-bottom: 100px;
+  width: 1920px;
   height: 940px;
   color: #FEFEFE;
-  background: #000 url("../../assets/images/landing__images/title__image.png") no-repeat;
+  background-size: 100%;
+  background: url("../../assets/images/landing__images/title__image.png") 0 0 no-repeat;
 }
 
 .about-animals__title {
@@ -181,6 +196,10 @@ html, body {
       justify-content: space-around;
 }
 
+.about-animals .social__icons a {
+  cursor: pointer;
+}
+
 .watch__btn {
   margin-top: 35px;
   width: 245px;
@@ -193,11 +212,24 @@ html, body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
 }
 
 .watch__btn img {
   display: inline-block;
   padding-right: 5px;
+}
+
+.watch__btn a {
+  color: #FFFFFF;
+}
+
+.watch__btn:hover {
+  -webkit-box-shadow: 5px 5px 5px #333;
+          box-shadow: 5px 5px 5px #333;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
 }
 
 .choice-slides {
@@ -219,6 +251,7 @@ html, body {
 
 #range {
   -webkit-appearance: none;
+  cursor: pointer;
   width: 245px;
   height: 5px;
   background: rgba(189, 189, 189, 0.57);
@@ -402,7 +435,16 @@ html, body {
 .pets .arrow {
   cursor: pointer;
   position: absolute;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
   top: 50%;
+}
+
+.pets .arrow:hover {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
 }
 
 .pets .arrow:nth-child(1) {
@@ -417,12 +459,12 @@ html, body {
   padding-top: 100px;
   padding-bottom: 100px;
   width: 100%;
-  height: 640px;
+  height: 750px;
   background: #F2F2F2;
 }
 
 .pay__wrapper {
-  height: 440px;
+  height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,6 +577,15 @@ html, body {
   cursor: pointer;
   position: absolute;
   top: 50%;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+.testimonial .arrow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
 }
 
 .testimonial .arrow:nth-child(1) {

@@ -71,7 +71,20 @@ body {
   line-height: 19px;
 }
 
+.header__link {
+  padding-bottom: 2px;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.header__link:hover {
+  border-bottom: 1px solid #333;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
 .header__choice {
+  cursor: pointer;
   background: #F2F2F2;
   border-radius: 190px;
   width: 54px;
@@ -129,6 +142,10 @@ body {
 .watch__btn img {
   display: inline-block;
   padding-right: 5px;
+}
+
+.watch__btn a {
+  color: #FFFFFF;
 }
 
 .choice-slides {
@@ -506,5 +523,14 @@ body {
 
 .pets .arrow {
   cursor: pointer;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.pets .arrow:hover {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
 }
 /*# sourceMappingURL=style__map.css.map */

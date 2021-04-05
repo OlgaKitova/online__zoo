@@ -13,15 +13,15 @@
 <body>
   <header class="header">
     <div class="header__title">
-      <a href="index.html">
+      <a href="../landing__page/index.html">
         <h1><span>zoo</span>online</h1>
       </a>
     </div>
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__link"><a href="../landing__page/index.html">About</a></li>
-        <li class="header__link"><a href="map.html">Map</a></li>
-        <li class="header__link"><a href="#">Contact Us</a></li>
+        <li class="header__link"><a href="../map__page/map.html">Map</a></li>
+        <li class="header__link"><a href="#contacts">Contact Us</a></li>
         <li class="header__link"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
             target="_blank">Design</a></li>
       </ul>
@@ -98,27 +98,27 @@
      <div class="footer__wrapper">
        <div class="footer__head">
          <div class="header__title footer__title">
-           <a href="index.html">
+           <a href="../landing__page/index.html">
              <h1><span>zoo</span>online</h1>
            </a>
          </div>
          <div class="footer__nav">
            <ul class="footer__list">
-             <li class="footer__link"><a href="index.html">About</a></li>
-             <li class="footer__link"><a href="#">Map</a></li>
+             <li class="footer__link"><a href="../landing__page/index.html">About</a></li>
+             <li class="footer__link"><a href="../map__page/map.html">Map</a></li>
              <li class="footer__link"><a href="#">Zoos</a></li>
            </ul>
          </div>
          <button class="watch__btn footer__btn">donate for volunteers</button>
        </div>
        <div class="footer__contacts">
-         <div class="footer__form">
+         <div id="contacts" class="footer__form">
            <h4 class="form__title">Contact us</h4>
            <form action="#" class="form">
-             <input class="form__req" id="name" type="text" placeholder="Name">
-             <input class="form__req" id="email" type="email" placeholder="Email">
+             <input class="form__req" id="name" type="text" placeholder="Name" required>
+             <input class="form__req" id="email" type="email" placeholder="Email" required>
              <label class="form__text" for="message">Please enter your message</label>
-             <textarea name="message" id="message" cols="30" rows="10"></textarea>
+             <textarea name="message" id="message" cols="30" rows="10" required></textarea>
              <div class="form__consent">
                <input class="form__real" id="check" type="checkbox" checked>
                <label class="form__fake" for="check"></label>

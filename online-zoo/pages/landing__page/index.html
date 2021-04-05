@@ -12,14 +12,15 @@
 </head>
 <body>
     <header class="header">
-      <div class="header__title">
+      <div id="title" class="header__title">
         <a href="index.html"><h1><span>zoo</span>online</h1></a>
       </div>
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__link"><a href="index.html">About</a></li>
-          <li class="header__link"><a href="#">Map</a></li>
-          <li class="header__link"><a href="#">Contact Us</a></li>
+          <li class="header__link"><a href="../zoos__page/panda.html">Zoos</a></li>
+          <li class="header__link"><a href="../map__page/map.html">Map</a></li>
+          <li class="header__link"><a href="#contacts">Contact Us</a></li>
           <li class="header__link"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" target="_blank">Design</a></li>
         </ul>
       </nav>
@@ -79,8 +80,8 @@
           <img src="../../assets/images/landing__images/deer.png" alt="deer">
         </div>
         <div class="choice-slides choice-slides--gray">
-          <p><span class="choice-index">02/</span>08</p>
-          <input id="range" type="range" min="1" max="8">
+          <p><span class="choice-index">01/</span>04</p>
+          <input id="range" type="range" min="1" max="8" step="2">
         </div>
         <button class="watch__btn">
           <img src="../../assets/icons/landing__icons/audiobtn.png" alt="">Watch online</button>
@@ -131,7 +132,7 @@
               <p><span class="choice-index">01/</span>08</p>
               <input id="range" type="range" min="1" max="8">
             </div>
-            <button class="watch__btn">Choose your favorite</button>
+            <button class="watch__btn"><a href="../map__page/map.html">Choose your favorite</a></button>
           </div>
         </div>
       </section>
@@ -162,6 +163,7 @@
                   the bamboo</p>
               </div>
             </div>
+            <button class="watch__btn">Donate</button>
           </div>
         </div>
       </section>
@@ -201,17 +203,18 @@
           <h2 class="map__title">Map</h2>
           <div class="map__card">
             <img src="../../assets/images/landing__images/map/map.png" alt="map">
-            <div class="map__drop map__drop1"><img src="../../assets/images/landing__images/map/eagle__mini.svg" alt="eagle"></div>
-            <div class="map__drop map__drop2"><img src="../../assets/images/landing__images/map/alli__mini.svg"
-                alt="alligator"></div>
-                <div class="map__drop map__drop3"><img src="../../assets/images/landing__images/map/monkey__mini.svg"
-                    alt="monkey"></div>
-                    <div class="map__drop map__drop4"><img src="../../assets/images/landing__images/map/panda__mini.svg"
-                        alt="panda"></div>
+            <div class="map__drop map__drop1"><a href="../zoos__page/eagle.html" target="_blank"><img
+                  src="../../assets/images/landing__images/map/eagle__mini.svg" alt="eagle"></a></div>
+            <div class="map__drop map__drop2"><a href="../zoos__page/alligator.html" target="_blank"><img
+                  src="../../assets/images/landing__images/map/alli__mini.svg" alt="alligator"></a></div>
+                <div class="map__drop map__drop3"><a href="../zoos__page/gorilla.html" target="_blank"><img src="../../assets/images/landing__images/map/monkey__mini.svg"
+                    alt="monkey"></a></div>
+                    <div class="map__drop map__drop4"><a href="../zoos__page/panda.html" target="_blank"><img src="../../assets/images/landing__images/map/panda__mini.svg"
+                        alt="panda"></a></div>
           </div>
           <div class="map__btn">
           <button class="watch__btn">
-            <img src="../../assets/icons/landing__icons/audiobtn.png" alt="">Watch online</button></div>
+            <a href="../zoos__page/panda.html"><img src="../../assets/icons/landing__icons/audiobtn.png" alt="">Watch online</a></button></div>
         </div>
       </section>
     </main>
@@ -219,33 +222,33 @@
       <div class="footer__wrapper">
         <div class="footer__head">
           <div class="header__title footer__title">
-            <a href="index.html">
+            <a href="#title">
               <h1><span>zoo</span>online</h1>
             </a>
           </div>
            <div class="footer__nav">
              <ul class="footer__list">
-               <li class="footer__link"><a href="index.html">About</a></li>
-               <li class="footer__link"><a href="#">Map</a></li>
-               <li class="footer__link"><a href="#">Zoos</a></li>
+               <li class="footer__link"><a href="#title">About</a></li>
+               <li class="footer__link"><a href="../map__page/map.html">Map</a></li>
+               <li class="footer__link"><a href="../zoos__page/panda.html">Zoos</a></li>
              </ul>
              </div>
              <button class="watch__btn footer__btn">donate for volunteers</button>
         </div>
         <div class="footer__contacts">
-          <div class="footer__form">
+          <div id="contacts" class="footer__form">
             <h4 class="form__title">Contact us</h4>
             <form action="#" class="form">
-              <input class="form__req" id="name" type="text" placeholder="Name">
-              <input class="form__req" id="email" type="email" placeholder="Email">
+              <input class="form__req" id="name" type="text" placeholder="Name" required>
+              <input class="form__req" id="email" type="email" placeholder="Email" required>
               <label class="form__text" for="message">Please enter your message</label>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              <textarea name="message" id="message" cols="30" rows="10" required></textarea>
               <div class="form__consent">
-              <input class="form__real" id="check" type="checkbox" checked>
+              <input class="form__real" id="check" type="checkbox" checked required>
               <label class="form__fake" for="check"></label>
               <p class="form__check">I agree to the processing of Personal Data</p>
               </div>
-              <button class="form__btn">Send <img src="../../assets/images/landing__images/footer__arr.svg" alt=""></button>
+              <button type="submit" class="form__btn">Send <img src="../../assets/images/landing__images/footer__arr.svg" alt=""></button>
             </form>
           </div>
           <div class="footer__address">
