@@ -1,5 +1,10 @@
 $font: 'Roboto',sans-serif;
 $color: #333333;
+.no-active {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #333333;
+  font-weight: 900;
+}
 .container {
   margin: 0 auto;
   width: 900px;
@@ -23,8 +28,16 @@ html, body {
 
 &__title {
   cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  font-weight: 900;
+  text-align: center;
   a {
     color: $color;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    font-weight: 900;
+    text-align: center;
   }
   h1 {
     font-size: 18px;
@@ -536,6 +549,14 @@ margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  &__title {
+    a span {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 36px;
+    }
   }
   &__title > a {
     color: #FEFEFE;
