@@ -145,6 +145,7 @@ html, body {
   color: #FEFEFE;
   background-size: 100%;
   background: url("../../assets/images/landing__images/title__image.png") 0 0 no-repeat;
+  background-size: cover;
 }
 
 .about-animals__title {
@@ -156,6 +157,10 @@ html, body {
   line-height: 104px;
 }
 
+.about-animals__title h2 {
+  font-weight: 900;
+}
+
 @media (max-width: 1400px) {
   .about-animals__title {
     width: 940px;
@@ -164,7 +169,7 @@ html, body {
   }
 }
 
-.about-animals .slider {
+.slider {
   margin-top: -120px;
   margin-left: 970px;
   display: -webkit-box;
@@ -177,12 +182,13 @@ html, body {
 }
 
 @media (max-width: 1400px) {
-  .about-animals .slider {
+  .slider {
     margin-left: 650px;
   }
 }
 
-.about-animals .slides {
+.slides {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,11 +197,151 @@ html, body {
           align-items: center;
 }
 
-.about-animals .slide {
+.slides__line {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  border-bottom: 1px solid #FEFEFE;
+  z-index: 1;
+}
+
+.slides__line:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #FEFEFE;
+  border-radius: 50%;
+}
+
+.slides__line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: #FEFEFE;
+  border-radius: 50%;
+}
+
+.slide {
+  position: relative;
+  z-index: 2;
   margin-right: 46px;
 }
 
-.about-animals .social__icons {
+.slide__img {
+  width: 180px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide__hover {
+  display: none;
+  max-width: 196px;
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+
+.slide__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide__title {
+  padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.slide__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slide__wrap {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  border: 1px solid #4BD8B5;
+  border-radius: 50%;
+}
+
+.slide__wrap img {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.slide__wrap--white {
+  margin-left: 5px;
+  border: 1px solid #FFFFFF;
+}
+
+.slide__wrap--white img {
+  margin-top: 1px;
+}
+
+.slide__btn--watch {
+  color: #4BD8B5;
+}
+
+.slide__btn--donate {
+  color: #FFFFFF;
+}
+
+.slide:hover,
+.pets__slide:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border-radius: 5%;
+  background-color: black;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.slide:hover img,
+.pets__slide:hover img {
+  opacity: 0.5;
+  border-radius: 5%;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.slide:hover .slide__hover,
+.pets__slide:hover .slide__hover {
+  display: block;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.social__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +356,7 @@ html, body {
       justify-content: space-around;
 }
 
-.about-animals .social__icons a {
+.social__icons a {
   cursor: pointer;
 }
 
@@ -431,6 +577,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -443,7 +590,8 @@ html, body {
 }
 
 .pets img {
-  max-width: 100%;
+  max-width: 280px;
+  max-height: 400px;
 }
 
 .pets .arrow {
@@ -467,6 +615,29 @@ html, body {
 
 .pets .arrow:nth-child(2) {
   right: -50px;
+}
+
+.pets__slide:hover {
+  cursor: pointer;
+  border-radius: 5%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: black;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.pets__slide:hover img {
+  opacity: 0.5;
+  border-radius: 5%;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.pets__slide:hover .slide__hover {
+  display: block;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
 }
 
 .pay {
@@ -690,7 +861,86 @@ html, body {
 }
 
 .map__drop {
+  -webkit-transition: all 0.3 easy-in;
+  transition: all 0.3 easy-in;
   position: absolute;
+}
+
+.map__change {
+  width: 100px;
+  height: 110px;
+  display: block;
+  background-color: #4BD8B5;
+  -webkit-mask-image: url("../../assets/images/landing__images/map/placeholder 2.svg");
+          mask-image: url("../../assets/images/landing__images/map/placeholder 2.svg");
+}
+
+.map__change img {
+  position: absolute;
+  top: 23px;
+  left: 25px;
+}
+
+.map .about {
+  display: none;
+  position: absolute;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  width: 430px;
+  height: 150px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.map .about__eagle {
+  top: 150px;
+  left: -300px;
+}
+
+.map .about__img {
+  width: 65px;
+  height: 65px;
+}
+
+.map .about__img img {
+  width: 65px;
+  height: 65px;
+}
+
+.map .about__title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+
+.map .about__link {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.map .about__link span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.map .map__drop:hover .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map .map__change:hover {
+  background-color: #EB5757;
+  -webkit-transition: all 0.3 easy-in;
+  transition: all 0.3 easy-in;
 }
 
 .map__drop1 {
@@ -796,8 +1046,8 @@ html, body {
 
 .footer__form {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 53%;
-          flex: 0 0 53%;
+      -ms-flex: 0 0 43%;
+          flex: 0 0 43%;
 }
 
 .footer .form {
