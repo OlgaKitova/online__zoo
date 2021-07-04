@@ -106,13 +106,14 @@ border-radius: 50%;
   display: none;
 }
 .hide-input {
-  visibility: hidden;
+  opacity: 0;
 }
 }
 .about-animals {
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   width: 1920px;
-  height: 940px;
+  height: 1040px;
   color: #FEFEFE;
   background-size: 100%;
   background: url('../../assets/images/landing__images/title__image.png') 0 0 no-repeat;
@@ -135,12 +136,21 @@ border-radius: 50%;
 }
 }
 .slider {
+  position: relative;
   margin-top: -120px;
   margin-left: 970px;
   display: flex;
   flex-direction: column;
    @media(max-width: 1400px) {
      margin-left: 650px;
+}
+.swiper {
+  position: absolute;
+  top: -20px;
+  left: 190px;
+  width: 250px;
+  height: 300px;
+  background: #333;
 }
 }
 .slides {
@@ -241,7 +251,7 @@ text-transform: uppercase;
   color: #FFFFFF;
 }
 }
-.slide:hover,
+/*.slide:hover,
 .pets__slide:hover {
   cursor: pointer;
   transform: scale(1.5);
@@ -259,6 +269,7 @@ text-transform: uppercase;
   transition: all 0.3 ease-in;
 }
 }
+*/
 .social__icons {
   display: flex;
   flex-direction: column;
@@ -343,9 +354,11 @@ text-transform: uppercase;
 #range::-webkit-slider-thumb {
 background: #333333;
 }
+
 }
 //Works 
 .works {
+  color: #333333;
   padding-bottom: 100px;
 &__wrapper {
   display: flex;
@@ -355,7 +368,7 @@ background: #333333;
   margin: 0 auto;
   height: 858px;
   justify-content: space-around;
-  color: #333333;
+  
 }
 
 &__title {
@@ -369,7 +382,6 @@ background: #333333;
   width: 793px;
   font-size: 14px;
   line-height: 16px;
-  color: #4F4F4F;
 }
 
 &__image {
@@ -912,4 +924,27 @@ margin: 0 auto;
       padding-bottom: 5px;
     }
   }
+}
+//Interactive
+.black__toggle {
+  background: #3c3c3c;
+}
+.black__color {
+  background: #333 !important;
+  color: #fff;
+}
+.gray__color{
+  background: #4f4f4f !important;
+  color: #fff;
+}
+.map__black {
+position: absolute;
+top: 0;
+left: 0;
+}
+.map__black--hidden {
+  opacity: 0;
+}
+.slider__active {
+  transform: scale(1.2);
 }
